@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    function Cars(model,color,speed,engine){
+        this.model = model;
+        this.color = color;
+        this.speed = speed;
+        this.engine = engine;
+        this.wheel = " Extended Wheelbase"
+
+    };
+
+    const RollsRoyce = new Cars ("phantom","rosegold", "563 hp","V 12");
+    const Audi = new Cars ("Audi R8","smoke-ash","533 hp", "V10 FSI")
+    const Mercedesbenz = new Cars ("G 63 Amg", "Mudblack"," 577 hp","V8 biturbo")
+    const Honda = new Cars ("Honda CRV", "Purewhite","185 hp","1.5L DI VTEC Turbo")
+    // console.log(Audi.model)
+
+    RollsRoyce.ghost = function(){
+        consol.log(`Hello, we also have  ghost as our ${this.model}`)
+    }
+    RollsRoyce.ghost()
+   
+
+//     const RollsRoyce = {
+//   name: 'RR'
+// };
+
+// // Add a method
+// Cars.RollsRoyce = function() {
+//   console.log(`Hello, you can call me  ${this.name}`);
+// };
+
+// // Call the method
+// Cars.RollsRoyce(); 
+    </script>
+</body>
+</html>
